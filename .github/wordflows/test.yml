@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Echo the name
+      name: Echo the name
       run:
         export NAME "Mathias"
         echo $NAME
