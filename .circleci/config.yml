@@ -14,7 +14,12 @@ workflows:
                 - circleci
 
       - node/test:
+          requires:
+            - "node/run"
           filters:
             branches:
               only:
                 - circleci
+
+deploy:
+
