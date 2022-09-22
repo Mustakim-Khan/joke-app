@@ -25,6 +25,7 @@ workflows:
       - heroku/deploy-via-git:
           requires:
             - node/run
+            - node/test
           app-name: "ci-cd-iw1"
           filters:
             branches:
