@@ -12,13 +12,13 @@ workflows:
           filters:
             branches:
               only:
-                - remotes/origin/circleci
+                - circleci
 
       - node/test:
           filters:
             branches:
               only:
-                - remotes/origin/circleci
+                - circleci
 
       - heroku/deploy-via-git:
           requires:
@@ -28,5 +28,4 @@ workflows:
           filters:
             branches:
               only:
-                - remotes/origin/circleci
-
+                - circleci
